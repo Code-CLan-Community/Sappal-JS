@@ -1,0 +1,29 @@
+<script>
+function salary()
+{
+   a = parseInt(es.value) 
+   b  = parseInt((55*a)/100) 
+   c =  parseInt((20*a)/100) 
+   d = parseInt((12*a)/100)
+
+   da.innerHTML = b +" (55%)"
+   hra.innerHTML = c + " (20%)"
+   pf.innerHTML = d + " (12%)"
+   
+   ns.innerHTML = a + (b+c) -d
+
+    
+}
+</script>
+<html>
+    <input type="text" placeholder="Enter Employee Salary" id="es"><br><br>
+    <input type="button" value="Get Net Salary" onclick="salary()"><br><br>
+
+    <b>Dear Allowance:</b><span id="da"> </span><br>
+    <b>House Rent Allowance:</b><span id="hra"></span><br>
+    <b>P.F:</b><span id="pf"> </span><br>
+    <b>Net Salary:</b><span id="ns"> </span><br>
+
+
+
+</html>

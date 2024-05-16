@@ -1,0 +1,43 @@
+<script>
+    function func(ch) {
+        if (ch == 1) {
+            x = (pr.value)
+            y = (qt.value)
+            ans = (x * y)
+            t_amt.innerHTML = "Your Amount will be - " + ans
+        } 
+        else if (ch == 2) {
+            x = pr.value
+            y = qt.value
+            ans = x * y
+            k = (dis.value)
+            k = (k * (ans)) / 100
+            n = ans - k
+            disc.innerHTML = "Your Discount Amount will be - " + k
+            net.innerHTML = "Your Net Amount is - " + n
+        }
+
+    }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- //For calculatingthe amountbefore Discount  -->
+    <input type="text" id="pr" placeholder="Enter Price"><br><br>
+    <input type="text" id="qt" placeholder="Enter Quantity"><br><br>
+    <input type="button" value="Get Amount" onclick="func(1)"><br><br>
+    <!-- Showing Net Amount Before Discount  -->
+    <div id="t_amt">Your Total Amount is - </div><br>
+
+    <!-- Calculating Discounted Amount -->
+    <input type="text" id="dis" placeholder="Enter Discount Percentage"><br><br>
+    <input type="button" value="Get Discount" onclick="func(2)"><br><br>
+    <!-- Showing Discount Amount -->
+    <div id="disc">Your Discount Amount is - </div><br><br>
+    <!-- Showing Net Amount after Discount -->
+    <div id="net">Your Net Amount will be - </div>
+
+</body>
+
+</html>

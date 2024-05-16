@@ -1,0 +1,66 @@
+<script>
+function result()
+{
+    mk.innerHTML = "<b> Student Marksheet </b> <hr>"
+    roll.innerHTML = "<b>Roll No.: </b>" + rid.value 
+    nm.innerHTML = "<b>Name: </b>" + nd.value 
+    p = parseFloat(phy.value)
+    c = parseFloat(chm.value)
+    m = parseFloat(math.value)
+    t = p+c+m
+    per = t/3
+    per = per.toFixed(2)
+
+    sub1.innerHTML = "<b>Physics: </b>" + p +"/100"
+    sub2.innerHTML = "<b>Chemistry: </b>" +c +"/100"
+    sub3.innerHTML = "<b>Mathematics: </b>" +m +"/100"
+    total.innerHTML = "<b>Total: </b>" +t +"/300"
+    percent.innerHTML = "<b>Percentage: " +per + " %</b>"
+    
+    //Grade Selection
+    if(per >60)
+    {
+        division.innerHTML = "<b> Grade: A</b>"
+    } 
+    else if(per>47)
+    {
+        division.innerHTML = "<b> Grade: B</b>"
+    }
+    else if(per>24)
+    {
+        division.innerHTML = "<b> Grade: C</b>"
+    }
+    else if (per>0 )
+    {
+        division.innerHTML = "<b> Grade: D</b>"
+    }
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Student Marks</h1>
+    <hr><br>
+
+    <b>Roll No: </b><input type="text" placeholder="Enter Roll No." id="rid"><br><br>
+    <b>Name: </b><input type="text" placeholder="Enter Name" id="nd"><br><br>
+    <b>Physics: </b><input type="text" placeholder="Marks in Physics" id="phy"><br><br>
+    <b>Chemistry: </b><input type="text" placeholder="Marks in Chemistry " id="chm"><br><br>
+    <b>Mathematics: </b> <input type="text" placeholder="marks in Mathematics" id="math"><br><br>
+
+    <input type="button" value="Get Result" onclick="result()"><br><br>
+    
+    <h1 id="mk"></h1>
+    <div id="roll">.</div><br>
+    <div id="nm">.</div><br>
+    <div id="sub1"></div><br>
+    <div id="sub2"></div><br>
+    <div id="sub3"></div><br><br>
+
+    <div id="total"></div><br>
+    <div id="percent"></div><br>
+    <div id="division"></div><br>
+</body>
+</html>

@@ -1,0 +1,29 @@
+    <script>
+        function func()
+        {
+            x = parseFloat(pr.value)
+            y = parseFloat(tm.value)
+            z = parseFloat(rate.value)
+            ans = (x*y*z)/100
+            res.innerHTML = "Your Simple Intrest is - "+ ans
+
+        }
+    </script>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="pr" placeholder="Enter Principal"><br>
+        <input type="text" id="tm" placeholder="Enter Time Period"><br>
+        <input type="text" id="rate" placeholder="Enter Rate"><br>
+        <input type="button" value="Get Simple Intrest" onclick="func()"><br>
+        <br>
+        <div id="res">
+            Your Simple Intrest is - 
+        </div>
+  </body>
+  </html>

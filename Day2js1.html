@@ -1,0 +1,35 @@
+<script>
+function add(ch){
+
+    
+    // parseInt(str) --> convert string value to integer format
+    
+
+    var x = parseInt(txt1.value)
+    var y = parseInt(txt2.value)
+    if(ch==1)
+    {
+        var sum = x+y
+        msg.innerHTML = sum
+    }
+    else if(ch==2)
+    {
+        var sum = x*y
+        msg.innerHTML = sum
+    }
+
+}
+</script>
+<html>
+    <input type="text" placeholder="First Number" id="txt1"><br><br>
+    <input type="text" id="txt2" placeholder="Second Number"><br><br>
+    <input type="button" value="Addition" onclick="add(1)"><br><br>
+    <input type="button" value="Multiply" onclick="add(2)"><br><br>
+    <div id="msg">Message Here...</div>
+</html>
+
+<!-- task 1 -- Amt,rate,time and get S.I-->
+<!-- task 2 -- rate,quantity-- get amount (show amount)
+discount- get amount after discount
+show discount amount 
+then net amount -->

@@ -1,0 +1,50 @@
+<!-- <script>
+    function call(x,y) //process
+    {
+        alert("Veer is calling"+x+","+y);
+    }
+    </script>
+    <html>
+        <input type="button" value="Click me" onclick="call(100,700)">
+    </html> -->
+
+    <!-- <script>
+        function call(x,y) //process
+        {
+            alert(`veer ${x},${y}`);
+        }
+        </script>
+        <html>
+            <input type="button" value="Click me" onclick="call(100,700)">
+        </html> -->
+
+        <!-- <script>
+            function show(){
+                var user = txt.value // . means member
+                // txt is object name 
+                msg.innerHTML = "Welcome " + user
+            }
+        </script>
+        <html>
+            <input type="text" id="txt" /> <br><br>
+            <input type="button" value="Click here" onclick="show()"/> <br><br>
+            <div id="msg">See here..</div>
+        </html> -->
+
+        <script>
+            function show(){
+                // new technique
+                var user = txt.value // . means member
+
+                // txt is object name 
+
+                // old technique
+                //var user = document.getElementById('txt').value
+                msg.innerHTML = "<font color='green' face = 'impact' size = '10px'> Welcome " + user
+            }
+        </script>
+        <html>
+            <input type="text" id="txt" /> <br><br>
+            <input type="button" value="Click here" onclick="show()"/> <br><br>
+            <div id="msg">See here..</div>
+        </html>
